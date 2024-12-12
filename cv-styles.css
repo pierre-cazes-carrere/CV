@@ -1,0 +1,101 @@
+/* Styles globaux */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #e0e0e0;
+    background: linear-gradient(to bottom, #000000, #4b0082, #000080);
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: rgba(31, 31, 31, 0.9);
+    text-align: center;
+    padding: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #ff79c6;
+}
+header p {
+    margin: 5px 0;
+    font-size: 1.2rem;
+    color: #bd93f9;
+}
+header a {
+    color: #8be9fd;
+    text-decoration: none;
+}
+header a:hover {
+    text-decoration: underline;
+}
+
+/* Sections */
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(31, 31, 31, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    animation: slideIn 1.5s ease-out;
+}
+section h2 {
+    color: #8be9fd;
+    border-bottom: 2px solid #8be9fd;
+    padding-bottom: 5px;
+}
+
+/* Listes */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+ul li {
+    margin: 15px 0;
+}
+ul li h3 {
+    color: #ff79c6;
+    margin-bottom: 5px;
+}
+
+/* Contact */
+.contact a {
+    color: #8be9fd;
+    text-decoration: none;
+}
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: rgba(31, 31, 31, 0.9);
+    color: #999;
+    font-size: 0.9rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes slideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
